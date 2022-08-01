@@ -1,13 +1,13 @@
 <template>
-<div>
-    <h3>Home</h3>
-      <router-link to="/login">Login</router-link>
+    <div>
+        <h3>Home</h3>
+        <router-link :to="{ path:'/'}">Sair</router-link>
 
-</div>
-    
+    </div>
+
 </template>
 <script>
 export default {
-    name:'PagHome'
+    name: 'PagHome'
 }
 </script>

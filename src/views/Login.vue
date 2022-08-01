@@ -1,7 +1,7 @@
 <template>
 <div>
      <h3>Login</h3>
-       <router-link to="/home">Home</router-link>
+       <router-link :to="{path: '/home'}">Entrar - Home</router-link>
 
 </div>
    
