@@ -8,6 +8,6 @@
 </template>
 <script>
 export default {
-    name: 'PagHome'
+    name: 'HomeVue'
 }
 </script>
