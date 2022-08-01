@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-light bg-light menu-superior">
             <div class="container">
-                <a class="navbar-brand" href="#">Empresa 360</a>
+                <router-link  class="navbar-brand" to="/home">Empresa 360</router-link>
                 <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -15,9 +15,16 @@
 
         <div class="d-flex">
             <div class="list-group menu-esquerda">
-                <router-link class="list-group-item list-group-item-action" to="/home"><i class="bi bi-speedometer2"></i> Dashboard</router-link>
-                <router-link class="list-group-item list-group-item-action" to="/home/vendas"><i class="bi bi-cart"></i> Vendas</router-link>
-                <router-link class="list-group-item list-group-item-action" to="/home/servicos"><i class="bi bi-card-checklist"></i> Serviços</router-link>
+                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/dashboard"><i
+                        class="bi bi-speedometer2" ></i> Dashboard</router-link>
+                <router-link class="list-group-item list-group-item-action" to="/home/vendas" exact-active-class="ativo"><i class="bi bi-cart"
+                        ></i> Vendas</router-link>
+                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/vendas/leads"><i
+                        class="bi bi-caret-right" ></i> Leads</router-link>
+                <router-link  exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/vendas/contratos"><i
+                        class="bi bi-caret-right" ></i> Contratos</router-link>
+                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/servicos"><i
+                        class="bi bi-card-checklist" ></i> Serviços</router-link>
             </div>
 
             <div class="w-100">
@@ -28,7 +35,7 @@
                 </nav>
 
                 <div class="container-fluid">
-             <router-view></router-view>
+                    <router-view></router-view>
                 </div>
 
             </div>
@@ -36,8 +43,8 @@
     </div>
 </template>
 <script>
-export default{
-    name:'HomeVue'
+export default {
+    name: 'HomeVue'
 }
 </script>
 
@@ -56,4 +63,11 @@ export default{
     border-right: none;
 }
 
+.ativo {
+    color: white;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+
+}
 </style>
