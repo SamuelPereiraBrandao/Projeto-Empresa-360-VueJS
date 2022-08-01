@@ -6,7 +6,7 @@
                 <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Voltar</a>
+                           <router-link class="nav-link" to="/">Voltar</router-link>
                         </li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Senha">
                         </div>
-                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-primary" @click="navegarPara">Login</button>
                     </div>
                 </div>
             </div>
@@ -33,6 +33,19 @@
 </template>
 <script>
 export default {
-  name:'LoginVue'
+    name: 'LoginVue',
+    methods:{
+        navegarPara(){
+           //console.log(this.$router) //objeto de roteamento 
+           
+           this.$router.push('/home')
+           //this.$router.push({path: '/home'})
+          // this.$router.replace('/home') //volta pra raiz
+          //this.$router.forward() //avançar no histórico de rotas no navegador
+          //this.$router.back() //retornar no histórico de rotas do navegador
+          this.$router.go(2) //avançar ou retornar no histórico de rotass do navegador
+
+        }
+    }
 }
 </script>
