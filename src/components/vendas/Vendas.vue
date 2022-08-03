@@ -1,6 +1,7 @@
 <template>
-<h5>vendas</h5>
+<h5>Vendas</h5>
 <hr>
+
 <router-view></router-view>
 </template>
 <script>

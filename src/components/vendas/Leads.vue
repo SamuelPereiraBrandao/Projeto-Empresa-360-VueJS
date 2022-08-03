@@ -29,22 +29,12 @@
 
 </template>
 <script>
+import ApiMixin from '@/mixins/ApiMixin'
 export default {
-    name: 'LeadsVue',
-    data: () => ({
-        dados: null
-    }),
-    methods: {
-        getDadosApi() {
-            fetch('http://localhost:3000/leads')
-                .then(response => response.json())
-                .then(response => {
-                    this.dados = response
-                })
-        }
-    },
+    name: 'LeadsVue',  
+    mixins:[ApiMixin],
     created() {
-        this.getDadosApi()
+        this.getDadosApi('http://localhost:3000/leads')
     }
 }
 </script>

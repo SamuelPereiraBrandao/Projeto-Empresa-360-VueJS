@@ -15,15 +15,15 @@
 
         <div class="d-flex">
             <div class="list-group menu-esquerda">
-                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/dashboard"><i
+                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" :to="{name:'dasboard'}"><i
                         class="bi bi-speedometer2" ></i> Dashboard</router-link>
-                <router-link class="list-group-item list-group-item-action" to="/home/vendas" exact-active-class="ativo"><i class="bi bi-cart"
+                <router-link class="list-group-item list-group-item-action" :to="{name:'vendaspadrao'}" exact-active-class="ativo"><i class="bi bi-cart"
                         ></i> Vendas</router-link>
-                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/vendas/leads"><i
+                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" :to="{name:'leads'}"><i
                         class="bi bi-caret-right" ></i> Leads</router-link>
-                <router-link  exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/vendas/contratos"><i
+                <router-link  exact-active-class="ativo" class="list-group-item list-group-item-action" :to="{name:'contratos'}"><i
                         class="bi bi-caret-right" ></i> Contratos</router-link>
-                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" to="/home/servicos"><i
+                <router-link exact-active-class="ativo" class="list-group-item list-group-item-action" :to="{name:'servicos'}"><i
                         class="bi bi-card-checklist" ></i> Serviços</router-link>
             </div>
 
