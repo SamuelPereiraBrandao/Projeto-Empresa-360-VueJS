@@ -18,17 +18,14 @@ const routes = [
     {
         path: '/home', //localhost:8080/home
         component: Home,
-        name:'dasboard',
         children: [
             {
                 path: 'vendas',//localhost:8080/home/vendas
                 component: Vendas,
-                name: 'vendas',
                 children: [
                     {
                         path: 'leads',
-                        component: Leads,
-                        name:'leads' //localhost:8080/home/vendas/leads
+                        component: Leads, //localhost:8080/home/vendas/leads
                     },
                     {
                         path: 'leads/:id',
@@ -36,14 +33,13 @@ const routes = [
                     },
                     {
                         path: '',
-                        component: VendasPadrao,
-                        name:'vendaspadrao' //localhost:8080/home/vendas/
+                        component: VendasPadrao, //localhost:8080/home/vendas/
                     },
 
                     {
                         path: 'contratos',
                         component: Contratos,
-                        name:'contratos' //localhost:8080/home/vendas/Contratos
+                         //localhost:8080/home/vendas/Contratos
                     },
 
                 ]
