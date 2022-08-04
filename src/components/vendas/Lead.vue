@@ -20,16 +20,17 @@
             <div class="col-sm-10">
                 <input type="text" class="form-control" :value="dados.telefone">
             </div>
-    </div>
-            <div class="col-auto ">
-                <button class="btn btn-success" @click="$router.push('/home/vendas/leads')"> <i class="bi bi-backspace-fill"> </i>
-                    Voltar</button> |
-                <button class="btn  btn-primary">Atualizar</button>
-            </div>
-
-            <br>
-
         </div>
+        <div class="col-auto ">
+            <button class="btn btn-success" @click="$router.push('/home/vendas/leads')"> <i
+                    class="bi bi-backspace-fill"> </i>
+                Voltar</button> |
+            <button class="btn  btn-primary">Atualizar</button>
+        </div>
+
+        <br>
+
+    </div>
 </template>
 <script>
 import ApiMixin from "@/mixins/ApiMixin"
