@@ -11,6 +11,9 @@ import Dashboard from '@/components/dashboard/Dashboard.vue'
 import Lead from '@/components/vendas/Lead.vue'
 import VendasPadrao from '@/components/vendas/VendasPadrao.vue'
 import Servico from '@/components/servicos/Servico.vue'
+import Opcoes from '@/components/servicos/Opcoes.vue'
+import Indicadores from '@/components/servicos/Indicadores.vue'
+import Rodape from '@/components/dashboard/DashboardRodape.vue'
 const routes = [
     {
         path: '/',
@@ -40,7 +43,7 @@ const routes = [
                     {
                         path: 'contratos',
                         component: Contratos,
-                         //localhost:8080/home/vendas/Contratos
+                        //localhost:8080/home/vendas/Contratos
                     },
 
                 ]
@@ -52,14 +55,21 @@ const routes = [
                 children: [
                     {
                         path: ':id', //localhost:8080/home/servicos
-                        component: Servico,
-                        name:'servico'
+                        components: {
+                            default: Servico,
+                            opcoes: Opcoes,
+                            indicadores: Indicadores
+                        },
+                        name: 'servico'
                     }
                 ]
             },
             {
                 path: 'dashboard',
-                component: Dashboard
+                components: 
+                {default: Dashboard,
+                rodape: Rodape
+                }
             }
         ]
     },
