@@ -27,6 +27,7 @@ const routes = [
             {
                 path: 'vendas',//localhost:8080/home/vendas
                 component: Vendas,
+                name:'vendas',
                 children: [
                     {
                         path: 'leads',
@@ -84,6 +85,18 @@ const routes = [
     {
         path: '/login', //localhost:8080/login
         component: Login
+    },
+    {
+        path: '/redirecionamento-1', redirect: '/home/servicos',
+
+    },
+    {
+        path: '/redirecionamento-2', redirect: '/home/vendas',
+
+    },
+    {
+        path: '/redirecionamento-3', redirect: { name: 'vendas' },
+
     },
 
 ]
