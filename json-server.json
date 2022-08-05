@@ -25,17 +25,20 @@
 		{
 			"id": 1,
 			"servico": "Seguro de vida",
-			"icone": "seguro_vida.png"
+			"icone": "seguro_vida.png",
+			"descricao": "O seguro de vida é um contrato entre um titular de apólice de seguro e uma seguradora ou seguradora, em que a seguradora promete pagar a um beneficiário designado uma quantia em dinheiro em caso de morte de um segurado."
 		},
 		{
 			"id": 2,
 			"servico": "Seguro residencial",
-			"icone": "seguro_residencial.png"
+			"icone": "seguro_residencial.png",
+			"descricao": "O seguro residencial, também chamado de seguro residencial, é um tipo de seguro de propriedade que cobre uma residência particular."
 		},
 		{
 			"id": 3,
 			"servico": "Seguro auto",
-			"icone": "seguro_auto.png"
+			"icone": "seguro_auto.png",
+			"descricao": "Seguro de veículo é seguro para carros, caminhões, motocicletas e outros veículos rodoviários. Seu principal uso é fornecer proteção financeira contra danos físicos ou lesões corporais resultantes de colisões no trânsito e contra a responsabilidade que também pode resultar de incidentes em um veículo."
 		}
 	]
 }

@@ -10,6 +10,7 @@ import Contratos from '@/components/vendas/Contratos.vue'
 import Dashboard from '@/components/dashboard/Dashboard.vue'
 import Lead from '@/components/vendas/Lead.vue'
 import VendasPadrao from '@/components/vendas/VendasPadrao.vue'
+import Servico from '@/components/servicos/Servico.vue'
 const routes = [
     {
         path: '/',
@@ -47,7 +48,14 @@ const routes = [
             {
                 path: 'servicos',//localhost:8080/home/servicos
                 component: Servicos,
-                name: 'servicos'
+                name: 'servicos',
+                children: [
+                    {
+                        path: ':id', //localhost:8080/home/servicos
+                        component: Servico,
+                        name:'servico'
+                    }
+                ]
             },
             {
                 path: 'dashboard',
