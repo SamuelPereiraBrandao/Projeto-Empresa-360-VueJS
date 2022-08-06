@@ -56,6 +56,7 @@ const routes = [
                     {
                         path: 'contratos',
                         component: Contratos,
+                        name:'contratos'
                         //localhost:8080/home/vendas/Contratos
                     },
 
