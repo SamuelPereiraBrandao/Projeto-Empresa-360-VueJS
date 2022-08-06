@@ -45,10 +45,7 @@ const routes = [
                     {
                         path: 'leads/:id',
                         component: Lead,
-                        alias: ['/l/:id',
-                            '/pessoa/:id',
-                            '/:id'
-                        ]  //localhost:8080/home/vendas/lead/5
+                          //localhost:8080/home/vendas/lead/5
                     },
                     {
                         path: '',
