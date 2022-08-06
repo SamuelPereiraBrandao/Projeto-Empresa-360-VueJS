@@ -14,10 +14,19 @@ import Servico from '@/components/servicos/Servico.vue'
 import Opcoes from '@/components/servicos/Opcoes.vue'
 import Indicadores from '@/components/servicos/Indicadores.vue'
 import Rodape from '@/components/dashboard/DashboardRodape.vue'
+import Error404 from '@/components/dashboard/DashboardErro.vue'
 const routes = [
+    {
+        path: '/:catchAll(.*)*', redirect: {name:'erro'} //redireciona todos url desconhecidas para pag raiz
+    },
     {
         path: '/',
         component: Site
+    },
+    {
+        path: '/error404',
+        component: Error404,
+        name:'erro'
     },
     {
         path: '/home', //localhost:8080/home
@@ -27,7 +36,6 @@ const routes = [
             {
                 path: 'vendas',//localhost:8080/home/vendas
                 component: Vendas,
-                name:'vendas',
                 children: [
                     {
                         path: 'leads',
@@ -44,7 +52,8 @@ const routes = [
                     },
                     {
                         path: '',
-                        component: VendasPadrao, //localhost:8080/home/vendas/
+                        component: VendasPadrao,
+                        name: 'vendas' //localhost:8080/home/vendas/
                     },
 
                     {
@@ -98,7 +107,7 @@ const routes = [
         path: '/redirecionamento-3', redirect: { name: 'vendas' },
 
     },
-
+   
 ]
 
 const router = createRouter({
