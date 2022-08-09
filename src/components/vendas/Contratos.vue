@@ -59,6 +59,7 @@ import ApiMixin from '@/mixins/ApiMixin'
 export default {
     name: 'ContratosVue',
     mixins: [ApiMixin],
+    
     data: () => ({
         parametrosDeRelacionamento: '_expand=lead&_expand=servico',
         formPesquisa: {
@@ -67,6 +68,7 @@ export default {
             data_inicio_lte: ''
         }
     }),
+
     methods: {
         pesquisar() {
             
