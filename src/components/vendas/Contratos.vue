@@ -59,7 +59,7 @@ import ApiMixin from '@/mixins/ApiMixin'
 export default {
     name: 'ContratosVue',
     mixins: [ApiMixin],
-    
+
     data: () => ({
         parametrosDeRelacionamento: '_expand=lead&_expand=servico',
         formPesquisa: {
@@ -71,30 +71,21 @@ export default {
 
     methods: {
         pesquisar() {
-            
-            Object.keys(this.formPesquisa).forEach(chave => { //removendo itens vazios
-                if(this.formPesquisa[chave] == ''){
-                    delete this.formPesquisa[chave]
-                }
-            })
 
-            const queryParams = new URLSearchParams(this.formPesquisa).toString()
-            const url = `http://localhost:3000/contratos?${this.parametrosDeRelacionamento}&${queryParams}`
-            this.getDadosApi(url)
+            const url = `http://localhost:3000/contratos?${this.parametrosDeRelacionamento}`
+            this.getDadosApi(url, this.formPesquisa)
         }
     },
     created() {
 
-        const queryParams = new URLSearchParams(this.$route.query).toString()
-        const url = `http://localhost:3000/contratos?${this.parametrosDeRelacionamento}&${queryParams}`
-        this.getDadosApi(url)
+        const url = `http://localhost:3000/contratos?${this.parametrosDeRelacionamento}`
+        this.getDadosApi(url, this.$route.query)
     },
     beforeRouteUpdate(to, from, next) {
         //console.log(to.query) //objeto => url search params
-        const queryParams = new URLSearchParams(to.query).toString()
-        const url = `http://localhost:3000/contratos?${this.parametrosDeRelacionamento}&${queryParams}`
+        const url = `http://localhost:3000/contratos?${this.parametrosDeRelacionamento}`
 
-        this.getDadosApi(url)
+        this.getDadosApi(url, to.query)
         next()
     }
 }

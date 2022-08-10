@@ -7,9 +7,9 @@
 		{ "id": 5, "nome": "Bruce Wayne", "telefone": "11 98888-4444" }
 	],
 	"servicos": [
-		{ "id": 1, "servico": "Seguro de vida", "icone": "seguro_vida.png", "descricao": "Detalhes do seguro de vida" },
-		{ "id": 2, "servico": "Seguro residencial", "icone": "seguro_residencial.png", "descricao": "Detalhes do seguro residencial" },
-		{ "id": 3, "servico": "Seguro auto", "icone": "seguro_auto.png", "descricao": "Detalhes do seguro auto" }
+		{ "id": 1, "servico": "Seguro de vida", "icone": "seguro_vida.png", "descricao": "O seguro de vida é um contrato entre um titular de apólice de seguro e uma seguradora ou seguradora, em que a seguradora promete pagar a um beneficiário designado uma quantia em dinheiro em caso de morte de um segurado." },
+		{ "id": 2, "servico": "Seguro residencial", "icone": "seguro_residencial.png", "descricao": "O seguro residencial, também chamado de seguro residencial, é um tipo de seguro de propriedade que cobre uma residência particular." },
+		{ "id": 3, "servico": "Seguro auto", "icone": "seguro_auto.png", "descricao": "O seguro de carro, também comumente chamado de seguro automotivo, é um contrato que firma a obrigação de uma empresa seguradora em cobrir as necessidades do proprietário de um veículo diante dos prejuízos que possam vir a ocorrer no dia a dia. A cobertura destes prejuízos são especificadas nas cláusulas do contrato." }
 	],
 	"contratos": [
 		{ "id": 1, "leadId": 1, "servicoId": 2, "data_inicio": "2022-01-01 10:02:00 ", "data_fim": "2022-11-31 05:02:50"},
