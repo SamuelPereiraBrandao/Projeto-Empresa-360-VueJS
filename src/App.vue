@@ -8,7 +8,6 @@ Navbar <router-link to="/home">Home</router-link>
 <script>
 export default {
   name: 'App'
-
 }
 </script>
 
