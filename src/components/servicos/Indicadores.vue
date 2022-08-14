@@ -1,5 +1,9 @@
 <template>
-    <h5>componente indicadores</h5>
+    <div>
+        <h5>componente opcoes</h5>
+        <p>Poderiamos recuperar os indicadores do serviço id {{ id }}</p>
+
+    </div>
 </template>
 <script>
 export default {
@@ -8,7 +12,7 @@ export default {
         'id'
     ],
     created(){
-        console.log('indicadores = parametro via props', this.id)
+       // console.log('indicadores = parametro via props', this.id)
     }
 
 
