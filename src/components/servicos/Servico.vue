@@ -14,6 +14,7 @@ export default {
         ApiMixin
     ],
     created() {
+        console.log(`serviço`, this.$route.params.id)
         this.getDadosApi(`http://localhost:3000/servicos/${this.$route.params.id}`)
     },
     beforeRouteUpdate(to, from, next) {

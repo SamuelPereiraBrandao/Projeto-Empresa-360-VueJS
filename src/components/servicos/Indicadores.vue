@@ -3,6 +3,11 @@
 </template>
 <script>
 export default {
-    name:'IndicadoresVue'
+    name:'IndicadoresVue',
+    created(){
+        console.log('indicadores', this.$route.params.id)
+    }
+
+
 }
 </script>

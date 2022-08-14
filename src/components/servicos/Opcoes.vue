@@ -1,9 +1,12 @@
 <template>
-<hr>
+    <hr>
     <h5>componente opcoes</h5>
 </template>
 <script>
 export default {
-    name:'OpcoesVue'
+    name: 'OpcoesVue',
+    created() {
+        console.log('opcoes', this.$route.id)
+    }
 }
 </script>
