@@ -21,7 +21,8 @@ const routes = [
     },
     {
         path: '/',
-        component: Site
+        component: Site,
+        meta: { requerAutorizacao: false }
     },
     {
         path: '/error404',
@@ -30,6 +31,7 @@ const routes = [
     },
     {
         path: '/home', //localhost:8080/home
+        meta: { requerAutorizacao: true },
         component: Home,
         alias: '/app',
         children: [
@@ -96,7 +98,8 @@ const routes = [
     },
     {
         path: '/login', //localhost:8080/login
-        component: Login
+        component: Login,
+        meta: { requerAutorizacao: false }
     },
     {
         path: '/redirecionamento-1', redirect: '/home/servicos',
@@ -118,11 +121,12 @@ const router = createRouter({
     routes //routes: routes
 })
 
-router.beforeEach((to, from) => {
-    console.log('origem:', to)
-    console.log('destino:', from)
-    // verificar se o usuario esta autorizado a utilizar aquela rota
-    console.log('metodo executado antes do acesso a rota destino')
+router.beforeEach((to) => {
+    if(to.meta.requerAutorizacao){
+        console.log('acesso especial')
+    }else{
+        console.log('acesso comum')
+    }
 })
 
 export default router
