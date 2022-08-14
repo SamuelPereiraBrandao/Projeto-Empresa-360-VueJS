@@ -17,7 +17,7 @@ import Rodape from '@/components/dashboard/DashboardRodape.vue'
 import Error404 from '@/components/dashboard/DashboardErro.vue'
 const routes = [
     {
-        path: '/:catchAll(.*)*', redirect: {name:'erro'} //redireciona todos url desconhecidas para pag raiz
+        path: '/:catchAll(.*)*', redirect: { name: 'erro' } //redireciona todos url desconhecidas para pag raiz
     },
     {
         path: '/',
@@ -26,7 +26,7 @@ const routes = [
     {
         path: '/error404',
         component: Error404,
-        name:'erro'
+        name: 'erro'
     },
     {
         path: '/home', //localhost:8080/home
@@ -45,7 +45,7 @@ const routes = [
                     {
                         path: 'leads/:id',
                         component: Lead,
-                          //localhost:8080/home/vendas/lead/5
+                        //localhost:8080/home/vendas/lead/5
                     },
                     {
                         path: '',
@@ -56,7 +56,7 @@ const routes = [
                     {
                         path: 'contratos',
                         component: Contratos,
-                        name:'contratos'
+                        name: 'contratos'
                         //localhost:8080/home/vendas/Contratos
                     },
 
@@ -69,6 +69,11 @@ const routes = [
                 children: [
                     {
                         path: ':id',
+                        props: {
+                            default: true,
+                            indicadores: true,
+                            opcoes: true
+                        },
                         alias: '/s/:id',  //localhost:8080/home/servicos
                         components: {
                             default: Servico,
@@ -105,7 +110,7 @@ const routes = [
         path: '/redirecionamento-3', redirect: { name: 'vendas' },
 
     },
-   
+
 ]
 
 const router = createRouter({

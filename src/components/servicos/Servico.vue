@@ -13,9 +13,13 @@ export default {
     mixins: [
         ApiMixin
     ],
+    props: [
+        'id'
+    ],
     created() {
-        console.log(`serviço`, this.$route.params.id)
-        this.getDadosApi(`http://localhost:3000/servicos/${this.$route.params.id}`)
+        //console.log(`serviço`, this.$route.params.id)
+        //console.log('via props:', this.$props)
+        this.getDadosApi(`http://localhost:3000/servicos/${this.id}`)
     },
     beforeRouteUpdate(to, from, next) {
         if (to.params.id != undefined) {

@@ -4,8 +4,11 @@
 <script>
 export default {
     name:'IndicadoresVue',
+    props:[
+        'id'
+    ],
     created(){
-        console.log('indicadores', this.$route.params.id)
+        console.log('indicadores = parametro via props', this.id)
     }
 
 
