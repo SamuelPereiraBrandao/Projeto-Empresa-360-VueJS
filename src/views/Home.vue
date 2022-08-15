@@ -75,10 +75,13 @@ export default {
 }
 
 .rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position:fixed;
     left:0;
     bottom:0;
     width: 100%;
-    background-color: #0d6efd;
+    background-color: #0D6EFD;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <h1>Dashboardd</h1>
+    <h1>Dashboardd(conteudo aqui)</h1>
 </template>
 
 <script>
