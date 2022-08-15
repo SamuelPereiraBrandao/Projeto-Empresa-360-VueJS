@@ -35,6 +35,9 @@ export default {
     mixins: [ApiMixin],
     created() {
         this.getDadosApi('http://localhost:3000/leads')
+    },
+    beforeRouteEnter() {
+        console.log('guarda de componente before route enter')
     }
 }
 </script>

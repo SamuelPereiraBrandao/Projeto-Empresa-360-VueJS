@@ -42,6 +42,10 @@ const routes = [
                     {
                         path: 'leads',
                         component: Leads,
+                        beforeEnter(){
+                            //poderiamos verificar se o usuario tem permissao de carregar a rota
+                            console.log('guarda de rota beforeEnter')
+                        }
                         //localhost:8080/home/vendas/leads
                     },
                     {
@@ -127,6 +131,9 @@ router.beforeEach((to) => {
     }else{
         console.log('acesso comum')
     }
+})
+router.afterEach(() => {
+    console.log('guarda global aftereach')
 })
 
 export default router
