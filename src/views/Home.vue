@@ -103,8 +103,7 @@ export default {
     color: white;
     margin: 10px;
     border-radius: 10px;
-
-
+    z-index: 7;
 }
 
 .div1 a {
