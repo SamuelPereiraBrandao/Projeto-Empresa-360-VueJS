@@ -23,6 +23,7 @@
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Senha">
+                             <input  class="mt-3" type="checkbox" name="" id=""> lembrar login
                         </div>
                         <button class="btn btn-primary" @click="navegarPara">Login</button>
                     </div>

@@ -30,9 +30,20 @@
             <div class="w-100">
                 <nav aria-label="breadcrumb" class="pt-1 ps-3">
                     <ol class="breadcrumb">
+                    <div class="rodape">
+                    <div class="div1">
+<a href="https://github.com/SamuelPereiraBrandao"><i class="bi bi-github"></i>
+ GitHub </a>
+  ||
+<a href="https://www.linkedin.com/in/samuelpereirabrandao/"><i class="bi bi-linkedin"></i> Linkedin</a>
+</div>
+            <router-view name="rodape"></router-view>
+        </div>
                         <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                     </ol>
+                    
                 </nav>
+                
 
                 <div class="container-fluid">
                     <router-view></router-view>
@@ -41,6 +52,7 @@
             </div>
         </div>
         <div class="rodape">
+
             <router-view name="rodape"></router-view>
         </div>
     </div>
@@ -83,5 +95,24 @@ export default {
     bottom:0;
     width: 100%;
     background-color: #0D6EFD;
+    border-radius: 10px 10px 0px 0px;
+}
+.div1{
+    color:white;
+    margin: 10px;
+    border-radius: 10px;
+
+
+}
+.div1 a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+.div1 a:hover{
+    transition: 0.35s ease-in-out;
+    color: #000000;
+    filter:blur(0.5px);
 }
 </style>

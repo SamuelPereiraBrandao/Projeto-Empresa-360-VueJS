@@ -9,6 +9,8 @@
                             <router-link class="nav-link" to="/login">Acessar</router-link>
                         </li>
                     </ul>
+                    
+                    
                 </div>
             </div>
         </nav>
@@ -29,6 +31,7 @@
                             </div>
                             <div class="mb-3">
                                 <input type="email" class="form-control" placeholder="E-mail">
+                                <input  class="mt-3" type="checkbox" name="" id=""> Receber notificações (via email)
                             </div>
                             <button class="btn btn-primary">Me inscrever</button>
                         </div>
