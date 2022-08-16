@@ -6,7 +6,7 @@
                 <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                           <router-link class="nav-link" to="/">Voltar</router-link>
+                            <router-link class="nav-link" to="/">Voltar</router-link>
                         </li>
                     </ul>
                 </div>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Senha">
-                             <input  class="mt-3" type="checkbox" name="" id=""> lembrar login
+                            <input class="mt-3" type="checkbox" name="" id=""> lembrar login
                         </div>
                         <button class="btn btn-primary" @click="navegarPara">Login</button>
                     </div>
@@ -35,16 +35,16 @@
 <script>
 export default {
     name: 'LoginVue',
-    methods:{
-        navegarPara(){
-           //console.log(this.$router) //objeto de roteamento 
-           
-           this.$router.push('/home')
-           //this.$router.push({path: '/home'})
-          // this.$router.replace('/home') //volta pra raiz
-          //this.$router.forward() //avançar no histórico de rotas no navegador
-          //this.$router.back() //retornar no histórico de rotas do navegador
-          this.$router.go(2) //avançar ou retornar no histórico de rotass do navegador
+    methods: {
+        navegarPara() {
+            //console.log(this.$router) //objeto de roteamento 
+
+            this.$router.push('/home')
+            //this.$router.push({path: '/home'})
+            // this.$router.replace('/home') //volta pra raiz
+            //this.$router.forward() //avançar no histórico de rotas no navegador
+            //this.$router.back() //retornar no histórico de rotas do navegador
+            this.$router.go(2) //avançar ou retornar no histórico de rotass do navegador
 
         }
     }

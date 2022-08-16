@@ -7,13 +7,11 @@ import Vendas from '@/components/vendas/Vendas.vue'
 import Servicos from '@/components/servicos/Servicos.vue'
 import Leads from '@/components/vendas/Leads.vue'
 import Contratos from '@/components/vendas/Contratos.vue'
-import Dashboard from '@/components/dashboard/Dashboard.vue'
 import Lead from '@/components/vendas/Lead.vue'
 import VendasPadrao from '@/components/vendas/VendasPadrao.vue'
 import Servico from '@/components/servicos/Servico.vue'
 import Opcoes from '@/components/servicos/Opcoes.vue'
 import Indicadores from '@/components/servicos/Indicadores.vue'
-import Rodape from '@/components/dashboard/DashboardRodape.vue'
 import Error404 from '@/components/dashboard/DashboardErro.vue'
 const routes = [
     {
@@ -90,14 +88,7 @@ const routes = [
                     }
                 ]
             },
-            {
-                path: 'dashboard',
-                components:
-                {
-                    default: Dashboard,
-                    rodape: Rodape
-                }
-            }
+            
         ]
     },
     {
