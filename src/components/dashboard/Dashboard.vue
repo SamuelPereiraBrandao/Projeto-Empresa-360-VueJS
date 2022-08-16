@@ -24,7 +24,7 @@
     </div>
     
     <div class="texto">
-    <h1>safsafsafsafa</h1>
+    <h1>Titulo</h1>
     </div>
     <div id="content">
                     <ul>
@@ -72,26 +72,18 @@ export default {
 img {
    width: 100%;
    height: 200px;
-   background: center fixed;
+   background: center;
    border-radius: 10px;
 
 }
-img:hover{
-    filter: blur(2px);
-}
-.texto {
-      background-color: rgba(0,0,0,0.5);
-      color:#fff;
-      top: 680px;
-      margin-right: 20%;
-      width: 100%;
-      border-radius: 10px;
-      opacity: 0;
-}
+
+
 .texto :hover {
     opacity: 1;
 }
-body{font:normal 14px Tahoma, Arial, sans-serif;color:#333;background:#e5e5e5} /* Fonte normal tamanho 14 tenho Tahoma como fonte primaria */
+body{font:normal 14px Optima, Arial, sans-serif;
+
+background:#e5e5e5} /* Fonte normal tamanho 14 tenho Tahoma como fonte primaria */
 a{text-decoration:none;} /* Links sem efeitos */
 
 /* Carecteristicas da div. */
@@ -106,6 +98,7 @@ height: 100%;
 /* Carecteristicas de tudo que esta dentro da Div e com Link */
 #content ul li a{
     list-style: none;
+    
 display:block;
 position:relative;
 font-size:12px;
