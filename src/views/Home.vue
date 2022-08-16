@@ -30,16 +30,18 @@
             <div class="w-100">
                 <nav aria-label="breadcrumb" class="pt-1 ps-3">
                     <ol class="breadcrumb">
-
-                        <div class="div1">
-                            <a href="https://github.com/SamuelPereiraBrandao"><i class="bi bi-github"></i>
-                                GitHub </a>
-                            ||
-                            <a href="https://www.linkedin.com/in/samuelpereirabrandao/"><i class="bi bi-linkedin"></i>
-                                Linkedin</a>
-                        </div>
                         <div class="rodape">
+                            <div class="div1">
+                                <a href="https://github.com/SamuelPereiraBrandao"><i class="bi bi-github"></i>
+                                    GitHub </a>
+                                ||
+                                <a href="https://www.linkedin.com/in/samuelpereirabrandao/"><i
+                                        class="bi bi-linkedin"></i>
+                                    Linkedin</a>
+                            </div>
+
                             <router-view name="rodape"></router-view>
+
                         </div>
                         <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                     </ol>
