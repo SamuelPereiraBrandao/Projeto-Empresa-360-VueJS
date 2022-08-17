@@ -45,7 +45,7 @@
                         </div>
                         <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                     </ol>
-
+                    
                 </nav>
 
 
@@ -59,8 +59,11 @@
     </div>
 </template>
 <script>
+
+
 export default {
-    name: 'HomeVue'
+    name: "HomeVue",
+    
 }
 </script>
 
@@ -98,7 +101,7 @@ export default {
     background-color: #0D6EFD;
     border-radius: 10px 10px 0px 0px;
     z-index: 100;
-    
+
 }
 
 .div1 {

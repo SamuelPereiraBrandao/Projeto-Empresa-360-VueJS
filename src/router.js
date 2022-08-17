@@ -10,11 +10,19 @@ import Contratos from '@/components/vendas/Contratos.vue'
 import Dashboard from '@/components/dashboard/Dashboard.vue'
 import Lead from '@/components/vendas/Lead.vue'
 import VendasPadrao from '@/components/vendas/VendasPadrao.vue'
+import DashboardConteudo from '@/components/dashboard/DashboardConteudo.vue'
 import Servico from '@/components/servicos/Servico.vue'
 import Opcoes from '@/components/servicos/Opcoes.vue'
 import Indicadores from '@/components/servicos/Indicadores.vue'
 import Error404 from '@/components/dashboard/DashboardErro.vue'
+
 const routes = [
+    {
+        path: '/home/dashboard#/home',
+        component: DashboardConteudo,
+        name:DashboardConteudo
+        
+    },
     {
         path: '/:catchAll(.*)*', redirect: { name: 'erro' } //redireciona todos url desconhecidas para pag raiz
     },
@@ -89,6 +97,7 @@ const routes = [
                     }
                 ]
             },
+            
             {
                 path: 'dashboard',
                 components:
@@ -104,6 +113,7 @@ const routes = [
         component: Login,
         meta: { requerAutorizacao: false }
     },
+   
     {
         path: '/redirecionamento-1', redirect: '/home/servicos',
 
