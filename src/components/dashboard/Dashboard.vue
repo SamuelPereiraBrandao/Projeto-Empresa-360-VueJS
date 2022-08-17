@@ -4,21 +4,23 @@
         <div class="col">
             <h4>BENEFICIOS:</h4>
             <ul>
-                <li>teste1</li>
-                <li>teste1</li>
-                <li>teste1</li>
-                <li>teste1</li>
-                <li>teste1</li>
+                <li>Beneficio 1</li>
+                <li>Beneficio 2</li>
+                <li>Beneficio 3</li>
+                <li>Beneficio 4</li>
+                <li>Beneficio 5</li>
+               
             </ul>
         </div>
         <div class="col">
             <h4>CONTRAS:</h4>
             <ul>
-                <li>teste 1</li>
-                <li>teste 1</li>
-                <li>teste 1</li>
-                <li>teste 1</li>
-                <li>teste 1</li>
+                <li>contras 1</li>
+                <li>contras 2</li>
+                <li>contras 3</li>
+                <li>contras 4</li>
+                <li>contras 5</li>
+             
             </ul>
         </div>
     </div>
@@ -98,6 +100,10 @@ i {
     text-decoration: none;
     color:#0D6EFD;
 }
+li {
+    list-style: none;
+}
+
 img {
     flex-direction: column;
     height: 200px;
@@ -180,7 +186,8 @@ a {
 }
 
 ul {
-    list-style: none;
+    text-decoration: none;
+    
 }
 
 html, body, ul {     
@@ -205,6 +212,9 @@ html, body, ul {
   clear:both; 
   float:left;                             
 
+}
+.cont img :hover{
+    filter: blur(10px);
 }
 </style>
 
