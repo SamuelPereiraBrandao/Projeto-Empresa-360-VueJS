@@ -97,6 +97,8 @@ export default {
     width: 100%;
     background-color: #0D6EFD;
     border-radius: 10px 10px 0px 0px;
+    z-index: 100;
+    
 }
 
 .div1 {
