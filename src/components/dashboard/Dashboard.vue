@@ -143,7 +143,7 @@
                 <!-- DEMO 4 Item            -->
                 <div class="col-lg-6">
                     <div class="hover hover-4 text-white rounded"><img
-                            src="https://images2.nogueirense.com.br/wp-content/uploads/2019/04/461777879-1555944004.jpg"
+                            src="https://www.infomoney.com.br/wp-content/uploads/2019/06/pessoa-feliz.jpg?fit=900%2C600&quality=50&strip=all"
                             alt="">
                         <div class="hover-overlay"></div>
                         <div class="hover-4-content">
