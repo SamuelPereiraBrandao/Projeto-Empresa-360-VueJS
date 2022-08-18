@@ -3,14 +3,14 @@
     <div class="container py-5">
         <!-- For Demo Purpose -->
         <header class="text-center">
-            <h1 class="display-4 font-weight-bold">Empresa 360</h1>
+            <h1 class="display-4 font-weight-bold">Empresa <span style="color:#0D6EFD;">360</span></h1>
             <p class="font-italic text-muted mb-0">A melhor empresa, segundo estudos em 2022.</p>
             <p class="font-italic">Acesse mais informações <a href="" class="text-muted">
                     <u>\360Studio/</u></a>
             </p>
         </header>
         <div class="py-5">
-            <h3 class="font-weight-bold mb-0">360 Studio</h3>
+            <h3 class="font-weight-bold mb-0"><span style="color:#0D6EFD;">360</span> Studio</h3>
             <p class="font-italic text-muted mb-4">Nesta modalidade você consegue acessar todos os seus dados em um
                 unico aplicativo, conseguindo gerenciar seus dados a qualquer momento e em qualquer lugar!</p>
             <div class="row">
@@ -47,7 +47,7 @@
 
         <!-- DEMO 2-->
         <div class="py-5">
-            <h3 class="font-weight-bold mb-0">Alguns Beneficios:</h3>
+            <h3 class="font-weight-bold mb-3">Alguns Beneficios:</h3>
 
             <div class="row">
                 <!-- DEMO 2 Item-->
@@ -82,7 +82,7 @@
 
         <!-- DEMO 3 -->
         <div class="py-5">
-            <h3 class="font-weight-bold mb-0">Acrescimos</h3>
+            <h3 class="font-weight-bold mb-3">Acrescimos</h3>
 
             <div class="row">
                 <!-- DEMO 3 Item-->
@@ -123,7 +123,7 @@
         </div>
 
         <div class="py-5">
-            <h3 class="font-weight-bold mb-0">Clientes</h3>
+            <h3 class="font-weight-bold mb-3">Clientes</h3>
             <div class="row">
                 <!-- DEMO 4 Item-->
                 <div class="col-lg-6 mb-3 mb-lg-0">
@@ -162,7 +162,7 @@
         <!-- DEMO 5 -->
         <div class="py-5">
             <h3 class="font-weight-bold mb-0">SERVIÇOS</h3>
-            <p class="font-italic text-muted mb-4">Este são nossos serviços que você tem direito ao utilizar nosso
+            <p class="font-italic text-muted mb-2">Este são nossos serviços que você tem direito ao utilizar nosso
                 aplicativo.</p>
             <div class="row">
                 <!-- DEMO 5 Item-->
@@ -186,12 +186,33 @@
                 <div class="col-lg-6">
                     <!-- DEMO 5 Item-->
                     <div class="hover hover-5 text-white rounded"><img
-                            src="https://bootstrapious.com/i/snippets/sn-img-hover/hoverSet-9.jpg" alt="">
+                            src="https://www.smartia.com.br/blog/wp-content/uploads/2018/05/7-opcoes-de-empresas-de-seguro-residencial-para-voce-conhecer.jpg" alt="">
                         <div class="hover-overlay"></div>
                         <div class="hover-5-content">
-                            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Image <strong
-                                    class="font-weight-bold text-white">Caption </strong><span>Colorfull</span></h3>
+                            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Seguro  <strong
+                                    class="font-weight-bold text-white"> </strong><span>RESIDENCIAL</span></h3>
+                                    
                         </div>
+                    </div>
+                    <div class="margin1">
+                        <p>O seguro de vida é um contrato entre um titular de apólice de seguro e uma seguradora ou
+                            seguradora, em que a seguradora promete pagar a um beneficiário designado uma quantia em
+                            dinheiro em caso de morte de um segurado.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- DEMO 5 Item-->
+                    <div class="hover hover-5 text-white rounded"><img
+                            src="https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_mulher-carro-miniatura-sinalizand-protecao3.jpg?quality=70&strip=info&w=960" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-5-content">
+                            <h3 class="hover-5-title text-uppercase font-weight-light mb-0">Seguro  <strong
+                                    class="font-weight-bold text-white"> </strong><span>AUTO</span></h3>
+                                    
+                        </div>
+                    </div>
+                    <div class="margin1">
+                        <p>O seguro de carro, também comumente chamado de seguro automotivo, é um contrato que firma a obrigação de uma empresa seguradora em cobrir as necessidades do proprietário de um veículo diante dos prejuízos que possam vir a ocorrer no dia a dia. A cobertura destes prejuízos são especificadas nas cláusulas do contrato.</p>
                     </div>
                 </div>
             </div>
@@ -514,14 +535,17 @@ export default {
 }
 
 .margin1 {
-    margin: 20px 50px 20px 50px;
+    margin: 20px 20px 20px 20px;
     text-align: justify;
+    
+    border-left: #0D6EFD;
 }
 
 .margin1 p {
     padding: 10px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 10px;
+    
 }
 
 .margin1:hover ::after,
@@ -534,12 +558,12 @@ export default {
     background-image: linear-gradient(to right, rgb(13, 110, 253) 0%, rgba(0, 0, 0, 0.8) 40%,rgb(13, 110, 253) 60%);
     transform: skewX(-5deg);
     left: -40%;
-    animation: bgc 2500ms linear forwards;
+    animation: bgc 100ms linear forwards;
     mix-blend-mode: overlay;
 }
 @keyframes bgc {
-    0% {left: -40%}
-    100% {left: 140%}
+    0% {left: 0%}
+    100% {left: 20%}
 }
 </style>
 
