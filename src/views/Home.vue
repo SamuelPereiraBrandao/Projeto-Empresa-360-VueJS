@@ -15,7 +15,7 @@
 
 
         <div class="d-flex">
-            <div class="list-group menu-esquerda">
+            <div class="list-group menu-esquerda oculto">
                 <router-link exact-active-class="ativo" class="list-group-item list-group-item-action"
                     to="/home/dashboard"><i class="bi bi-speedometer2"></i> Dashboard</router-link>
                 <router-link class="list-group-item list-group-item-action" to="/home/vendas"
@@ -44,7 +44,7 @@
                             <router-view name="rodape"></router-view>
 
                         </div>
-                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
                     </ol>
                     
                 </nav>

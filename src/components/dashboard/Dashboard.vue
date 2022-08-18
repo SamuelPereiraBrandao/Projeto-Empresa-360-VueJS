@@ -229,7 +229,7 @@ export default {
 }
 
 </script>
-<style scoped>
+<style>
 .hover {
     overflow: hidden;
     position: relative;
