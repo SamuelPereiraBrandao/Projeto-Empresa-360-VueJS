@@ -24,7 +24,7 @@
                         <div class="hover-1-content px-5 py-4">
                             <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span
                                     class="font-weight-light">360 </span>Studio</h3>
-                            <p class="hover-1-description font-weight-light mb-0">O melhor aplicativo para gerenciamento
+                            <p class="hover-1-description font-weight-light mb-0 oculto">O melhor aplicativo para gerenciamento
                                 de dados.</p>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="hover-1-content px-5 py-4">
                             <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span
                                     class="font-weight-light">Cartão </span>360</h3>
-                            <p class="ml hover-1-description font-weight-light mb-0">Com este cartão você tem vários
+                            <p class="ml hover-1-description font-weight-light mb-0 oculto">Com este cartão você tem vários
                                 beneficios que podem ser visualizados abaixo:</p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                         <div class="hover-2-content px-5 py-4">
                             <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span
                                     class="font-weight-light">VIAGENS </span></h3>
-                            <p class="ml hover-2-description text-uppercase mb-0">com nosso cartão você pode acumular
+                            <p class="ml hover-2-description text-uppercase mb-0 oculto">com nosso cartão você pode acumular
                                 pontos e trocar por <br> viagens para onde você quiser!</p>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <div class="hover-2-content px-5 py-4">
                             <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span
                                     class="font-weight-light"> hoteis</span></h3>
-                            <p class=" ml hover-2-description text-uppercase mb-0">E nessas viagens pode se utilizar os
+                            <p class="oculto ml hover-2-description text-uppercase mb-0">E nessas viagens pode se utilizar os
                                 pontos para alugar qualquer hotel que deseja ficar!</p>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                             <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span
                                     class="font-weight-light">Acrescimos</span></h3>
                             <br>
-                            <p class="hover-3-description small text-uppercase mb-0">O acrescimo foi o nome dado a esse
+                            <p class="hover-3-description small text-uppercase mb-0 oculto">O acrescimo foi o nome dado a esse
                                 beneficio, como funciona? <br> Então o acrescimo é nada mais nada menos quando você está
                                 devendo um valor, e a data de vencimento está chegando, nós daremos até 2 semanas para
                                 você nos pagar, e só depois das 2 semmanas será cobrado tal valor!</p>
@@ -113,7 +113,7 @@
                             <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span
                                     class="font-weight-light"></span> <span class="">SESSÃO UNICA</span></h3>
                             <br>
-                            <p class="hover-3-description small text-uppercase mb-0">É um modo de segurança que apenas 1
+                            <p class="hover-3-description small text-uppercase mb-0 oculto">É um modo de segurança que apenas 1
                                 pessoa podera se manter conectada, ou seja qualquer outra pessoa logada sera bloqueada,
                                 e só entrando em contato com suporte e se autenticando como titular da conta, será
                                 desbloqueada!</p>
@@ -135,7 +135,7 @@
                         <div class="hover-4-content">
                             <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
                                     class="font-weight-light">CAMILA FERREIRA NETO</span></h3>
-                            <p class=" textoalinhado hover-4-description text-uppercase mb-0 small">Eu já tive vários
+                            <p class=" textoalinhado hover-4-description text-uppercase mb-0 small oculto">Eu já tive vários
                                 aplicativo, mas esse com toda certeza é o melhor! Totalmente seguro e barato anualmente,
                                 podem utilizar sem medo! <br> 18/08/2022</p>
                         </div>
@@ -150,7 +150,7 @@
                         <div class="hover-4-content">
                             <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
                                     class="font-weight-light">MATHEUS AGUIAR</span></h3>
-                            <p class=" textoalinhado hover-4-description text-uppercase mb-0 small">Este aplicativo
+                            <p class=" textoalinhado hover-4-description text-uppercase mb-0 small oculto">Este aplicativo
                                 mudou a minha forma de pensar, simplesmente intuitivo e muito maduro em termos de não
                                 conter nenhum tipo de erro <br> 18/05/2022</p>
                         </div>
@@ -448,11 +448,19 @@ export default {
     opacity: 0;
     transition: all 0.3s;
 }
-
-@media (min-width: 992px) {
+    .oculto {
+        display:block;
+        overflow: hidden;
+    }
+@media (max-width: 625px) {
     .hover-4-description {
         width: 50%;
     }
+        .oculto {
+        display:none;
+        overflow: hidden;
+    }
+
 }
 
 .hover-4:hover img {
