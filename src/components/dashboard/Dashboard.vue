@@ -5,8 +5,9 @@
         <header class="text-center">
             <h1 class="display-4 font-weight-bold">Empresa <span style="color:#0D6EFD;">360</span></h1>
             <p class="font-italic text-muted mb-0">A melhor empresa, segundo estudos em 2022.</p>
-            <p class="font-italic">Acesse mais informações <a href="" class="text-muted">
-                    <u>\360Studio/</u></a>
+            <p class="font-italic">Acesse mais informações:
+            <a  href="https://github.com/samuelpereirabrandao" class="text-muted hoverblue">
+                    <span >360Studio</span></a>
             </p>
         </header>
         <div class="py-5">
@@ -564,6 +565,12 @@ export default {
 @keyframes bgc {
     0% {left: 0%}
     100% {left: 20%}
+}
+.hoverblue{
+    text-decoration: none;
+}
+.hoverblue :hover{
+    color:rgb(13, 110, 253);
 }
 </style>
 
