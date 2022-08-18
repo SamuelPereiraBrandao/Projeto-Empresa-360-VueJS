@@ -6,7 +6,7 @@
   <img class="card-img-top" style="border-radius:10px" src="https://www.recorteadesivo.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=431&id_materia_prima=406&tamanho=290x290" alt="Imagem de capa do card">
   <div class="card-body">
     <h5 class="card-title">Plano A</h5>
-    <p class="card-text oculto">básico que pode-se ser utilizado totalmente de graça, mas nenhum beneficio.</p>
+    <p class="card-text oculto">O plano mais básico que temos e pode-ser utilizado totalmente de graça, mas com nenhum beneficio.</p>
     <i @click="menuHome()">
     <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
     </i>
@@ -18,7 +18,7 @@
   <img class="card-img-top" style="border-radius:10px" src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=826&id_materia_prima=1612&tamanho=290x290" alt="Imagem de capa do card">
   <div class="card-body">
     <h5 class="card-title">Plano B</h5>
-    <p class="card-text oculto">intermediario que pode conter alguns beneficios como: nosso cartão, viagens acumuladas.
+    <p class="card-text oculto">Intermediário que pode conter alguns beneficios para saber quis, acesse abaixo
     </p>
     <i @click="menuHome()">
      <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
