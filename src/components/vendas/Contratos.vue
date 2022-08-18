@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary" @click="pesquisar()">Pesquisar</button>
+                <button type="button" class="btn btn-outline-primary" @click="pesquisar()">Pesquisar</button>
             </div>
         </div>
 

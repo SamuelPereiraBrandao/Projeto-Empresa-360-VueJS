@@ -1,14 +1,61 @@
 <template>
 <div>
-<h1>teste</h1>
+<div class="container planos">
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" style="border-radius:10px" src="https://www.recorteadesivo.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=431&id_materia_prima=406&tamanho=290x290" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Plano A</h5>
+    <p class="card-text oculto">básico que pode-se ser utilizado totalmente de graça, mas nenhum beneficio.</p>
+    <i @click="menuHome()">
+    <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
+    </i>
+    
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" style="border-radius:10px" src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=826&id_materia_prima=1612&tamanho=290x290" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Plano B</h5>
+    <p class="card-text oculto">intermediario que pode conter alguns beneficios como: nosso cartão, viagens acumuladas.
+    </p>
+    <i @click="menuHome()">
+     <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
+    </i>
+   
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" style="border-radius:10px" src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=150&id_materia_prima=1612&tamanho=290x290" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Plano C</h5>
+    <p class="card-text oculto">O melhor plano que temos no momento, ele tem exatamente tudo que está no site, todos os beneficios, que você pode verificá-los aqui: </p>
+    <i @click="menuHome()">
+     <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
+    </i>
+   
+  </div>
+</div>
+
+
                 </div>
               
-
+</div>
 </template>
 
 <script>
 export default {
     name: 'DashboardVue',
+    methods:{
+        menuHome() {
+            var x = document.getElementById("divAll");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+        }
+    }
     
 }
 
@@ -364,6 +411,9 @@ export default {
 }
 .hoverblue :hover{
     color:rgb(13, 110, 253);
+}
+.planos{
+    display: flex;
 }
 
 </style>

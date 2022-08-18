@@ -22,10 +22,10 @@
             </div>
         </div>
         <div class="col-auto ">
-            <button class="btn btn-success" @click="$router.push('/home/vendas/leads')"> <i
+            <button class="btn btn-outline-dark" @click="$router.push('/home/vendas/leads')"> <i
                     class="bi bi-backspace-fill"> </i>
                 Voltar</button> |
-            <button class="btn  btn-primary">Atualizar</button>
+            <button class="btn btn-outline-success">Atualizar</button>
         </div>
 
         <br>

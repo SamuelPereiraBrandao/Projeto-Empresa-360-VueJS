@@ -34,7 +34,7 @@
                                 <input type="email" class="form-control" placeholder="E-mail">
                                 <input class="mt-3" type="checkbox" name="" id=""> Receber notificações (via email)
                             </div>
-                            <button class="btn btn-primary">Me inscrever</button>
+                            <button class="btn btn-outline-primary">Me inscrever</button>
                         </div>
                     </div>
                 </div>
