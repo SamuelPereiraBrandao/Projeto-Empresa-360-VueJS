@@ -18,6 +18,7 @@
                 </div>
             </div>
         </nav>
+        
 <div class="m-4 ocultomenu">
                     
                         <nav class="navbar navbar-expand-lg navbar-light ">
@@ -53,7 +54,7 @@
                             </div>
                         </nav>
                     </div>
-
+<div style="border:solid 1px"> </div>
         <div class="d-flex">
             <div>
                 <div class="list-group menu-esquerda oculto">
@@ -379,6 +380,7 @@ export default {
 .ativo {
     color: white;
     background-color: #0d6efd;
+    padding: 10px;
     border-color: #0d6efd;
     border-radius: 5px;
 
