@@ -1,6 +1,5 @@
 <template>
-Navbar <router-link to="/home">Home</router-link>
-  <router-view />  
+<router-view />  
     
 
 </template>
