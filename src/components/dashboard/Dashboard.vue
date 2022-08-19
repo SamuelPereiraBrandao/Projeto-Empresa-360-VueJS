@@ -1,38 +1,71 @@
 <template>
-<div class="row">
+    <div class="row">
+    <!--Div plano a-->
+        <div class="col m-2">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Plano A</h5>
+                    <p class="card-text">Nesse plano você não terá nenhum beneficio, mas podera utilizar nosso
+                        aplicativo.</p>
+                    <i @click="menuHome()">
+                        <router-link class="navbar-brand" to="/home">
+                            <a href="#" class="btn btn-outline-primary">Visitar</a>
+                        </router-link>
+                    </i>
+                </div>
+            </div>
+        </div>
 
-    <div class="col m-2">
-    <div class="card text-center" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Plano A</h5>
-    <p class="card-text">Nesse plano você não terá nenhum beneficio, mas podera utilizar nosso aplicativo.</p>
-    <a href="#" class="btn btn-outline-primary">Visitar</a>
-  </div>
+        <!--Div placo b-->
+        <div class="col m-2">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Plano B</h5>
+                    <p class="card-text">Nesse plano, você poderá receber alguns beneficios que poderam te ajudar
+                        bastante!</p>
+                    <i @click="menuHome()">
+                        <router-link class="navbar-brand" to="/home">
+                            <a href="#" class="btn btn-outline-primary">Visitar</a>
+                        </router-link>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div placo c-->
+        <div class="col m-2">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Plano C</h5>
+                    <p class="card-text">Nesse plano você tem 100% de todos os beneficios disponiveis pela Empresa 360!
+                    </p>
+                    <i @click="menuHome()">
+                        <router-link class="navbar-brand" to="/home">
+                            <a href="#" class="btn btn-outline-primary">Visitar</a>
+                        </router-link>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<h5 class="text-center mt-3">Resultados conforme pesquisas:</h5>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 15%">VALOR</div>
 </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%">CONFIANÇA</div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%">SEGURANÇA</div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">MELHORES BENEFICIOS</div>
 </div>
 
 
-<div class="col m-2">
-<div class="card text-center" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Plano B</h5>
-    <p class="card-text">Nesse plano, você poderá receber alguns beneficios que poderam te ajudar bastante!</p>
-    <a href="#" class="btn btn-outline-primary">Visitar</a>
-  </div>
-</div>
-</div>
 
-
-<div class="col m-2">
-<div class="card text-center" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Plano C</h5>
-    <p class="card-text">Nesse plano você tem 100% de todos os beneficios disponiveis pela Empresa 360!</p>
-    <a href="#" class="btn btn-outline-primary">Visitar</a>
-  </div>
-</div>
-</div>
-</div>
 </template>
 
 <script>
@@ -45,9 +78,9 @@ export default {
                 x.style.display = "block";
             }
         },
-       
-            
-        
+
+
+
     }
 
 }
@@ -110,9 +143,11 @@ export default {
     transition: all 0.4s;
     opacity: 0;
 }
-.text-right{
+
+.text-right {
     text-align: right;
 }
+
 .hover-1:hover .hover-1-content {
     bottom: 2rem;
 }
@@ -291,6 +326,8 @@ export default {
 
     }
 
+
+
 }
 
 .hover-4:hover img {
@@ -421,6 +458,10 @@ export default {
 
 .planos {
     display: flex;
+}
+.progress{
+    margin-top: 10px;
+    border-radius: 10px;
 }
 </style>
 
