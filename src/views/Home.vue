@@ -365,7 +365,9 @@
                                                 dinheiro em caso de morte de um segurado.</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                        
+                                    
+                                    <div  class="col-lg-6">
                                         <!-- DEMO 5 Item-->
                                         <div class="hover hover-5 text-white rounded"><img
                                                 src="https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_mulher-carro-miniatura-sinalizand-protecao3.jpg?quality=70&strip=info&w=960"
@@ -378,7 +380,8 @@
 
                                             </div>
                                         </div>
-                                        <div class="margin1">
+                                        
+                                        <div class="margin1 sumir" >
                                             <p>O seguro de carro, também comumente chamado de seguro automotivo, é um
                                                 contrato que firma a obrigação de uma empresa seguradora em cobrir as
                                                 necessidades do proprietário de um veículo diante dos prejuízos que
@@ -420,6 +423,7 @@ export default {
                 x.style.display = "block";
             }
         },
+        
 
     }
 }
