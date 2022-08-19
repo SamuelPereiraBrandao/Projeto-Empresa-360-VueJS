@@ -1,62 +1,84 @@
 <template>
-<div>
-<div class="container planos">
+    <div>
+        <div class="container planos">
 
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" style="border-radius:10px" src="https://www.recorteadesivo.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=431&id_materia_prima=406&tamanho=290x290" alt="Imagem de capa do card">
-  <div class="card-body">
-    <h5 class="card-title">Plano A</h5>
-    <p class="card-text oculto">O plano mais básico que temos e pode-ser utilizado totalmente de graça, mas com nenhum beneficio.</p>
-    <i @click="menuHome()">
-    <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
-    </i>
-    
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" style="border-radius:10px" src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=826&id_materia_prima=1612&tamanho=290x290" alt="Imagem de capa do card">
-  <div class="card-body">
-    <h5 class="card-title">Plano B</h5>
-    <p class="card-text oculto">Intermediário que pode conter alguns beneficios para saber quis, acesse abaixo
-    </p>
-    <i @click="menuHome()">
-     <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
-    </i>
-   
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" style="border-radius:10px" src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=150&id_materia_prima=1612&tamanho=290x290" alt="Imagem de capa do card">
-  <div class="card-body">
-    <h5 class="card-title">Plano C</h5>
-    <p class="card-text oculto">O melhor plano que temos no momento, ele tem exatamente tudo que está no site, todos os beneficios, que você pode verificá-los aqui: </p>
-    <i @click="menuHome()">
-     <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
-    </i>
-   
-  </div>
-</div>
-
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" style="border-radius:10px"
+                    src="https://www.recorteadesivo.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=431&id_materia_prima=406&tamanho=290x290"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Plano A</h5>
+                    <p class="card-text oculto">O plano mais básico que temos e pode-ser utilizado totalmente de graça,
+                        mas com nenhum beneficio.</p>
+                    <i @click="menuHome()">
+                        <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
+                    </i>
 
                 </div>
-              
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" style="border-radius:10px"
+                    src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=826&id_materia_prima=1612&tamanho=290x290"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Plano B</h5>
+                    <p class="card-text oculto">Intermediário que pode conter alguns beneficios para saber quis, acesse
+                        abaixo
+                    </p>
+                    <i @click="menuHome()">
+                        <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
+                    </i>
+
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" style="border-radius:10px"
+                    src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=150&id_materia_prima=1612&tamanho=290x290"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Plano C</h5>
+                    <p class="card-text oculto">O melhor plano que temos no momento, ele tem exatamente tudo que está no
+                        site, todos os beneficios, que você pode verificá-los aqui: </p>
+                    <i @click="menuHome()">
+                        <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
+                    </i>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div>
+    teste
+    <div class="btn-group" role="group" aria-label="Exemplo básico">
+  <button type="button" class="btn btn-secondary">Esquerda</button>
+  <button type="button" class="btn btn-success">Meio</button>
+  <button type="button" class="btn btn-secondary">Direita</button>
 </div>
+    </div>
+
+
 </template>
 
 <script>
 export default {
     name: 'DashboardVue',
-    methods:{
+    methods: {
         menuHome() {
             var x = document.getElementById("divAll");
             if (x.style.display === "none") {
                 x.style.display = "block";
-            } 
-        }
+            }
+        },
+       
+            
+        
     }
-    
+
 }
 
 </script>
@@ -279,18 +301,21 @@ export default {
     opacity: 0;
     transition: all 0.3s;
 }
-    .oculto {
-        display:block;
-        overflow: hidden;
-    }
+
+.oculto {
+    display: block;
+    overflow: hidden;
+}
+
 @media (max-width: 740px) {
     .hover-4-description {
         width: 50%;
     }
-        .oculto {
-        display:none;
+
+    .oculto {
+        display: none;
         overflow: hidden;
-        
+
     }
 
 }
@@ -378,7 +403,7 @@ export default {
 .margin1 {
     margin: 20px 20px 20px 20px;
     text-align: justify;
-    
+
     border-left: #0D6EFD;
 }
 
@@ -386,36 +411,44 @@ export default {
     padding: 10px;
     font-weight: 500;
     border-radius: 10px;
-    
+
 }
 
 .margin1:hover ::after,
-.margin1:hover ::before{
+.margin1:hover ::before {
     content: "";
     width: 40%;
     height: 50px;
     position: absolute;
     z-index: 2;
-    background-image: linear-gradient(to right, rgb(13, 110, 253) 0%, rgba(0, 0, 0, 0.8) 40%,rgb(13, 110, 253) 60%);
+    background-image: linear-gradient(to right, rgb(13, 110, 253) 0%, rgba(0, 0, 0, 0.8) 40%, rgb(13, 110, 253) 60%);
     transform: skewX(-5deg);
     left: -40%;
     animation: bgc 100ms linear forwards;
     mix-blend-mode: overlay;
 }
+
 @keyframes bgc {
-    0% {left: 0%}
-    100% {left: 20%}
-}
-.hoverblue{
-    text-decoration: none;
-}
-.hoverblue :hover{
-    color:rgb(13, 110, 253);
-}
-.planos{
-    display: flex;
+    0% {
+        left: 0%
+    }
+
+    100% {
+        left: 20%
+    }
 }
 
+.hoverblue {
+    text-decoration: none;
+}
+
+.hoverblue :hover {
+    color: rgb(13, 110, 253);
+}
+
+.planos {
+    display: flex;
+}
 </style>
 
 
