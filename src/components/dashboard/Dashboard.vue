@@ -1,67 +1,38 @@
 <template>
-    <div>
-        <div class="container planos">
+<div class="row">
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="border-radius:10px"
-                    src="https://www.recorteadesivo.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=431&id_materia_prima=406&tamanho=290x290"
-                    alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title">Plano A</h5>
-                    <p class="card-text oculto">O plano mais básico que temos e pode-ser utilizado totalmente de graça,
-                        mas com nenhum beneficio.</p>
-                    <i @click="menuHome()">
-                        <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
-                    </i>
-
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="border-radius:10px"
-                    src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=826&id_materia_prima=1612&tamanho=290x290"
-                    alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title">Plano B</h5>
-                    <p class="card-text oculto">Intermediário que pode conter alguns beneficios para saber quis, acesse
-                        abaixo
-                    </p>
-                    <i @click="menuHome()">
-                        <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
-                    </i>
-
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="border-radius:10px"
-                    src="https://www.figueiralaser.com.br/site/fotoTexturaMaterial?id_recorte_personalizado=150&id_materia_prima=1612&tamanho=290x290"
-                    alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title">Plano C</h5>
-                    <p class="card-text oculto">O melhor plano que temos no momento, ele tem exatamente tudo que está no
-                        site, todos os beneficios, que você pode verificá-los aqui: </p>
-                    <i @click="menuHome()">
-                        <a href="/home#/home" class="btn btn-outline-primary">Visitar</a>
-                    </i>
-
-                </div>
-            </div>
-
-
-        </div>
-
-    </div>
-    <div>
-    teste
-    <div class="btn-group" role="group" aria-label="Exemplo básico">
-  <button type="button" class="btn btn-secondary">Esquerda</button>
-  <button type="button" class="btn btn-success">Meio</button>
-  <button type="button" class="btn btn-secondary">Direita</button>
+    <div class="col m-2">
+    <div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Plano A</h5>
+    <p class="card-text">Nesse plano você não terá nenhum beneficio, mas podera utilizar nosso aplicativo.</p>
+    <a href="#" class="btn btn-outline-primary">Visitar</a>
+  </div>
 </div>
-    </div>
+</div>
 
 
+<div class="col m-2">
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Plano B</h5>
+    <p class="card-text">Nesse plano, você poderá receber alguns beneficios que poderam te ajudar bastante!</p>
+    <a href="#" class="btn btn-outline-primary">Visitar</a>
+  </div>
+</div>
+</div>
+
+
+<div class="col m-2">
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Plano C</h5>
+    <p class="card-text">Nesse plano você tem 100% de todos os beneficios disponiveis pela Empresa 360!</p>
+    <a href="#" class="btn btn-outline-primary">Visitar</a>
+  </div>
+</div>
+</div>
+</div>
 </template>
 
 <script>
@@ -139,7 +110,9 @@ export default {
     transition: all 0.4s;
     opacity: 0;
 }
-
+.text-right{
+    text-align: right;
+}
 .hover-1:hover .hover-1-content {
     bottom: 2rem;
 }
