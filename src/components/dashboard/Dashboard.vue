@@ -49,8 +49,9 @@
         </div>
     </div>
     
-
-<h5 class="text-center mt-3">Resultados conforme pesquisas:</h5>
+<br>
+<h4 class="text-center mt-3">Resultados conforme a pesquisa NPS</h4>
+<h6 class="text-center">2022</h6>
 <div class="progress">
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 15%">VALOR</div>
 </div>
@@ -66,6 +67,9 @@
 
 
 
+
+
+<div class="espaco"></div>
 </template>
 
 <script>
@@ -87,6 +91,9 @@ export default {
 
 </script>
 <style>
+.espaco{
+    padding-bottom: 100px;
+}
 .hover {
     overflow: hidden;
     position: relative;
@@ -463,6 +470,13 @@ export default {
     margin-top: 10px;
     border-radius: 10px;
 }
+.navbar{
+    flex-wrap: nowrap;
+    --bs-navbar-toggler-border-color:0;
+    --bs-navbar-toggler-focus-width:0;
+
+
+} 
 </style>
 
 

@@ -20,6 +20,7 @@
         <router-view name="indicadores"></router-view> <!--indicadores-->
 
     </div>
+<div class="espaco"></div>
 
 </template>
 <script>
