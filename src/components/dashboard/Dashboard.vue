@@ -1,7 +1,7 @@
 <template>
-    <div class="row">
+    <div class="row ">
     <!--Div plano a-->
-        <div class="col m-2">
+        <div class="col m-2 centered">
             <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Plano A</h5>
@@ -16,9 +16,8 @@
             </div>
         </div>
 
-
         <!--Div placo b-->
-        <div class="col m-2">
+        <div class="col m-2 centered">
             <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Plano B</h5>
@@ -34,7 +33,7 @@
         </div>
 
         <!-- Div placo c-->
-        <div class="col m-2">
+        <div class="col m-2 centered">
             <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Plano C</h5>
@@ -478,6 +477,10 @@ export default {
 
 
 } 
+.centered {
+    display: flex;
+    justify-content: center;
+}
 </style>
 
 
