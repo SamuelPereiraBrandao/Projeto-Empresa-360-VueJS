@@ -131,27 +131,37 @@ const routes = [
 
 const router = createRouter({
     history: createWebHashHistory(),
-    scrollBehavior(){
-        return {
-            left:0, top: 150
-        } // left = x / top= y
+    scrollBehavior(to){
+        //return {left:0, top: 150} // left = x / top= y
+        console.log(to.hash)
+        if(to.hash){
+            return {
+                el: to.hash //to.hash deve corresponder a um id de elemento html
+                //fragmento = @secao_1 => id = secao_1
+            }
+        }else {
+            return {
+                left:0,
+                top:0
+            }
+        }
     }, 
     routes //routes: routes
 })
 
 router.beforeEach((to) => {
     if(to.meta.requerAutorizacao){
-        console.log('acesso especial')
+        //console.log('acesso especial')
     }else{
-        console.log('acesso comum')
+        //console.log('acesso comum')
     }
 })
 router.afterEach(() => {
-    console.log('guarda global aftereach')
+    //console.log('guarda global aftereach')
 })
 
 router.beforeResolve(() => {
-    console.log('guarda global before resolve')
+    //console.log('guarda global before resolve')
 })
 export default router
 // --- fim rotas
