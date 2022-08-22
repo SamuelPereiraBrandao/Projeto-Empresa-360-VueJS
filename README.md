@@ -10,7 +10,7 @@
 
 ## 🏷️ Sobre 
 Site de uma apresentação de um aplicativo que faz tudo!
-<p align="left">Confira a aplicação: <a href="" target="_blank"> Venha conhecer agora mesmo! <a/></p>
+<p align="left">Confira a aplicação: <a href="https://projeto-empresa-360-vue-js.vercel.app/#/" target="_blank"> Venha conhecer agora mesmo! <a/></p>
 
 ---
 
