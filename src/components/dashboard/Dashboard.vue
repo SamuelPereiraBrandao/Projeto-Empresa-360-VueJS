@@ -16,6 +16,7 @@
             </div>
         </div>
 
+
         <!--Div placo b-->
         <div class="col m-2">
             <div class="card text-center" style="width: 18rem;">
