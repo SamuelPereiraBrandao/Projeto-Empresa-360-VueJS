@@ -19,7 +19,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação "Vagas"
 
 - [Vue.JS](https://vuejs.org/)
 - [BootStrap](https://getbootstrap.com/)
-- [Json Server] (https://www.npmjs.com/package/json-server)
+- [Json Server](https://www.npmjs.com/package/json-server)
 
 ## 🗂️ Como baixar e iniciar o projeto 
 
@@ -30,6 +30,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação "Vagas"
     
     #Instalar VueJS, NodeJs e Json server
     $ NodeJS: baixar a aplicação (https://nodejs.org/).
+    
     Instalar no cmd:
     $ VueJS: npm install -g @vue/cli
     $ JsonServer: npm install -g json-server
