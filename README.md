@@ -15,7 +15,7 @@ Site de uma apresentação de um aplicativo que faz tudo!
 ---
 
 ## 🛠️ Tecnologias e serviços utilizados
-Foram utilizadas as seguintes tecnologias para desenvolver a aplicação "Vagas" :
+Foram utilizadas as seguintes tecnologias para desenvolver a aplicação "Empresa 360" :
 
 - [Vue.JS](https://vuejs.org/)
 - [BootStrap](https://getbootstrap.com/)
