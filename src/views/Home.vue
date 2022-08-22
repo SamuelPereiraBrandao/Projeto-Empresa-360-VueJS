@@ -82,19 +82,7 @@
             <div class="w-100">
                 <nav aria-label="breadcrumb" class="pt-1 ps-3">
                     <ol class="breadcrumb">
-                        <div class="rodape">
-                            <div class="div1">
-                                <a href="https://github.com/SamuelPereiraBrandao"><i class="bi bi-github"></i>
-                                    GitHub </a>
-                                ||
-                                <a href="https://www.linkedin.com/in/samuelpereirabrandao/"><i
-                                        class="bi bi-linkedin"></i>
-                                    Linkedin</a>
-                            </div>
-
-                            <router-view name="rodape"></router-view>
-
-                        </div>
+                        
                         <li class="breadcrumb-item active" aria-current="page"></li>
                     </ol>
 
@@ -454,19 +442,6 @@ export default {
 
 }
 
-.rodape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #0D6EFD;
-    border-radius: 10px 10px 0px 0px;
-    z-index: 100;
-
-}
 
 .div1 {
     color: white;
