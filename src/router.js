@@ -131,6 +131,11 @@ const routes = [
 
 const router = createRouter({
     history: createWebHashHistory(),
+    scrollBehavior(){
+        return {
+            left:0, top: 150
+        } // left = x / top= y
+    }, 
     routes //routes: routes
 })
 
@@ -145,5 +150,8 @@ router.afterEach(() => {
     console.log('guarda global aftereach')
 })
 
+router.beforeResolve(() => {
+    console.log('guarda global before resolve')
+})
 export default router
 // --- fim rotas
