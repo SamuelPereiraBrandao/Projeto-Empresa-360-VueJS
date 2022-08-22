@@ -39,6 +39,9 @@ export default {
     },
     beforeRouteEnter() {
         console.log('guarda de componente before route enter')
+    },
+    beforeRouteLeave(){
+        console.log("Guarda de componente beforerouteleave")
     }
 }
 </script>

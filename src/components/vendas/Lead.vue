@@ -41,6 +41,11 @@ export default {
     ],
     created() {
         this.getDadosApi(`http://localhost:3000/leads/${this.$route.params.id}`)
+    },
+    beforeRouteLeave(){
+        
+        const confirmar = window.confirm('Deseja realmente sair deste formulário?')
+       return confirmar
     }
 }
 </script>
