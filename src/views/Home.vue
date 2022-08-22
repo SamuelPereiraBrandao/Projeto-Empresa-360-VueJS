@@ -103,12 +103,12 @@
                                 <p class="font-italic text-muted mb-0">A melhor empresa, segundo estudos em 2022.</p>
                                 <p class="font-italic">Acesse mais informações:
                                     <a href="https://github.com/samuelpereirabrandao" class="text-muted hoverblue">
-                                        <span>360Studio</span></a>
+                                        <span><i>360</i>Studio </span></a>
                                 </p>
                             </header>
 
                             <div class="py-5">
-                                <h3 class="font-weight-bold mb-0"><span style="color:#0D6EFD;">360</span> Studio</h3>
+                                <h3 class="font-weight-bold mb-0"><span style="color:#0D6EFD;"><i>360</i> </span> Studio</h3>
                                 <p class="font-italic text-muted mb-4">Nesta modalidade você consegue acessar todos os
                                     seus dados em um
                                     unico aplicativo, conseguindo gerenciar seus dados a qualquer momento e em qualquer
@@ -138,7 +138,7 @@
                                             <div class="hover-overlay"></div>
                                             <div class="hover-1-content px-5 py-4">
                                                 <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span
-                                                        class="font-weight-light">360 </span>Studio</h3>
+                                                        class="font-weight-light"><i>360</i>  </span>Studio</h3>
                                                 <p class="hover-1-description font-weight-light mb-0 oculto">O melhor
                                                     aplicativo para gerenciamento
                                                     de dados.</p>
@@ -153,7 +153,7 @@
                                             <div class="hover-overlay"></div>
                                             <div class="hover-1-content px-5 py-4">
                                                 <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span
-                                                        class="font-weight-light">Cartão </span>360</h3>
+                                                        class="font-weight-light">Cartão </span><i>360</i> </h3>
                                                 <p class="ml hover-1-description font-weight-light mb-0 oculto">Com este
                                                     cartão você tem vários
                                                     beneficios que podem ser visualizados abaixo:</p>

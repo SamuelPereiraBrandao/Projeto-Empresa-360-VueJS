@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-light bg-light menu-superior">
             <div class="container">
-                <router-link class="nav-link" to="/">Empresa 360</router-link>
+                <router-link class="nav-link" to="/">Empresa <i>360</i> </router-link>
                 <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -50,3 +50,9 @@ export default {
     }
 }
 </script>
+<style>
+i{
+    text-decoration: none;
+    color:#0D6EFD;
+}
+</style>

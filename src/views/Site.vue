@@ -2,20 +2,20 @@
     <div>
         <nav class="navbar navbar-light bg-light menu-superior">
             <div class="container">
-                <a class="navbar-brand" href="#">Empresa 360</a>
+                <a class="navbar-brand" href="#">Empresa <i>360</i> </a>
 
                 <ul class="navbar-nav links">
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ path: '/', hash: '#secao_1' }">Seção 1</router-link>
+                        <router-link class="nav-link" :to="{ path: '/', hash: '#secao_1' }">E360 </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ path: '/', hash: '#secao_2' }">Seção 2</router-link>
+                        <router-link class="nav-link" :to="{ path: '/', hash: '#secao_2' }">Localizações</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{path: '/', hash: '#secao_3'}">Seção 3</router-link>
+                        <router-link class="nav-link" :to="{path: '/', hash: '#secao_3'}">Sobre</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/login">Acessar</router-link>
+                        <router-link class="nav-link" to="/login"><i>Acessar</i> </router-link>
                     </li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
                             <div class="mb-3">
                                 <input type="email" class="form-control" placeholder="E-mail">
                             </div>
-                            <button class="btn btn-primary">Me inscrever</button>
+                            <button class="btn btn-outline-primary">Me inscrever</button>
                         </div>
                     </div>
                 </div>
@@ -47,39 +47,38 @@
 
             <div class="row mt-5 p-5 bg-light">
                 <div class="col">
-                    <h3 id="secao_1">Seção 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere luctus elit, et blandit
-                        neque pulvinar a. Nunc id consectetur ipsum. Sed dignissim turpis quis fringilla pretium. Sed
-                        bibendum faucibus ex, tincidunt aliquet mauris commodo accumsan. Vivamus commodo risus quis
-                        euismod tempus. Donec non hendrerit quam. Vivamus laoreet lacus sed neque tristique pulvinar.
-                        Vestibulum in maximus dolor. Mauris efficitur libero quis placerat placerat.</p>
-                    <p>Proin sollicitudin orci ligula, ac bibendum ante porttitor ac. Mauris a sem id augue blandit
-                        dapibus. Fusce facilisis mi et velit porttitor suscipit. Praesent ut nunc ullamcorper, pretium
-                        augue vitae, bibendum ligula. Duis ut augue lobortis, congue erat et, placerat nisl. Nam sed
-                        lobortis leo. Pellentesque gravida hendrerit urna, vitae ullamcorper ante pharetra eget. Integer
-                        consectetur laoreet ultricies. Nunc vestibulum pulvinar sodales.</p>
+                    <h3 id="secao_1" class="mb-3">Empresa <i>360</i>  (E<i>360</i> )</h3>
+                    <p>Nossa empresa foi criado no final de 2012, com o intuito de promover ações beneficiarias para pessoas que estavam em situações ruins, com nossa enorme evolução, conseguimos abranger os clientes e atender todos os tipos, com isso aumentamos nossa produtividade e com isso podemos ajudar muito mais pessoas!</p>
                 </div>
             </div>
 
-            <div class="row mt-5 p-5">
-                <div class="col">
-                    <h3 id="secao_2">Seção 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere luctus elit, et blandit
-                        neque pulvinar a. Nunc id consectetur ipsum. Sed dignissim turpis quis fringilla pretium. Sed
-                        bibendum faucibus ex, tincidunt aliquet mauris commodo accumsan. Vivamus commodo risus quis
-                        euismod tempus. Donec non hendrerit quam. Vivamus laoreet lacus sed neque tristique pulvinar.
-                        Vestibulum in maximus dolor. Mauris efficitur libero quis placerat placerat.</p>
-                </div>
+            <div class="row mt-5 p-5 ">
+                
+                    <h3 id="secao_2" class="text-center mb-3">Nossas localizações</h3>
+                    <div class="col mt-3">
+                    <h5>São Paulo</h5>
+                    <p>Rua alexandre borges, 354</p>
+                    <p>Rua Almadraladres, 40</p>
+                    <p>Avenida Jose Abrel, 1337</p>
+                    <p>Avenida Paulista, 2375</p>
+                    </div>
+                    <div class="col mt-3">   
+                    <h5>Rio de Janeiro</h5>
+                    <p>São Augusto, 456</p>
+                    <p>Angra dos reis, 35</p>
+                    </div>
+                 
+                
             </div>
 
             <div class="row mt-5 p-5 bg-light">
                 <div class="col">
-                    <h3 id="secao_3">Seção 3</h3>
-                    <p>Proin sollicitudin orci ligula, ac bibendum ante porttitor ac. Mauris a sem id augue blandit
-                        dapibus. Fusce facilisis mi et velit porttitor suscipit. Praesent ut nunc ullamcorper, pretium
-                        augue vitae, bibendum ligula. Duis ut augue lobortis, congue erat et, placerat nisl. Nam sed
-                        lobortis leo. Pellentesque gravida hendrerit urna, vitae ullamcorper ante pharetra eget. Integer
-                        consectetur laoreet ultricies. Nunc vestibulum pulvinar sodales.</p>
+                    <h3 id="secao_3" class="mb-3">Mais sobre a empresa  <i>360</i></h3>
+                    <p>Nos trabalhamos com nosso aplicativo, com ele você pode fazer milhares de coisas, desde um recarregameto de bilhete, até o financiamento de um carro! <br>
+                    O que está esperando? venha agora mesmo conhecer todos os beneficios que estamos te oferecendo! <br>
+                    De a volta completa, seja <i>360</i>! <br>
+                    <router-link class="nav-link mb-3 mt-3" to="/login"><button class="btn btn-outline-primary">Acessar</button></router-link></p>
+
                 </div>
             </div>
         </div>
@@ -114,5 +113,9 @@ export default {
 
 .links a {
     margin-right: 20px;
+}
+i{
+    text-decoration: none;
+    color:#0D6EFD;
 }
 </style>

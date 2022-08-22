@@ -37,7 +37,7 @@
             <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Plano C</h5>
-                    <p class="card-text">Nesse plano você tem 100% de todos os beneficios disponiveis pela Empresa 360!
+                    <p class="card-text">Nesse plano você tem 100% de todos os beneficios disponiveis pela Empresa <i>360</i>!
                     </p>
                     <i @click="menuHome()">
                         <router-link class="navbar-brand" to="/home">
@@ -122,7 +122,10 @@ export default {
     position: relative;
     z-index: 99;
 }
-
+i{
+    text-decoration: none;
+    color:#0D6EFD;
+}
 
 /* DEMO 1 ============================== */
 .hover-1 img {
