@@ -29,10 +29,10 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação "Vagas"
     $ git clone https://github.com/SamuelPereiraBrandao/Projeto-Empresa-360-VueJS.git
     
     #Instalar VueJS, NodeJs e Json server
-    NodeJS: baixar a aplicação (https://nodejs.org/).
+    $ NodeJS: baixar a aplicação (https://nodejs.org/).
     Instalar no cmd:
-    VueJS: npm install -g @vue/cli
-    JsonServer: npm install -g json-server
+    $ VueJS: npm install -g @vue/cli
+    $ JsonServer: npm install -g json-server
 
     #entrar no diretório
     $ cd Projeto-Empresa-360-VueJS //entrar na pasta com o terminal
