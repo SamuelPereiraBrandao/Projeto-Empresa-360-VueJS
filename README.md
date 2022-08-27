@@ -2,7 +2,7 @@
 <table align="center">
     <tr>
         <td>
-            <img src="../assets/empresa360.gif" width="700px" alt="imagem-do-site" align="center">
+            <img src="./assets/empresa360.gif" width="700px" alt="imagem-do-site" align="center">
         </td>
     </tr>
 
