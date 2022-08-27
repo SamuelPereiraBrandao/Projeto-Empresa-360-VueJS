@@ -84,9 +84,9 @@
         </div>
 
         <div class="container-fluid mt-5">
-            <div class="row bg-secondary">
+            <div class="row bg-primary">
                 <div class="col">
-                    <p>Rodapé</p>
+                    <p></p>
                 </div>
             </div>
         </div>
