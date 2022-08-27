@@ -108,6 +108,7 @@
                             </header>
 
                             <div class="py-5">
+                                
                                 <h3 class="font-weight-bold mb-0"><span style="color:#0D6EFD;"><i>360</i> </span> Studio</h3>
                                 <p class="font-italic text-muted mb-4">Nesta modalidade você consegue acessar todos os
                                     seus dados em um

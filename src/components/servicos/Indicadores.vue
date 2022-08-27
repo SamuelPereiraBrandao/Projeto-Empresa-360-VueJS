@@ -1,7 +1,5 @@
 <template>
     <div>
-        <h5>componente opcoes</h5>
-        <p>Poderiamos recuperar os indicadores do serviço id {{ id }}</p>
 
     </div>
 </template>
